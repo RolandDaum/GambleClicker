@@ -13,3 +13,10 @@ If you still want to try your luck and see how far it takes you press [here](htt
 For everyone who is interested in the stochastic Maths part of this, here is a chart that shows the probability of an increase on the Y-Axis and the amount of clicks in decimal on the X-Axis.
 
 ![Probability Chart](/docs/ProbabilityChart.png)
+
+For reference, here is a screenshot of the chart from the game after something like 10K runs.
+
+![Probability Chart](/docs/GameChart.png)
+
+Aside from the fact that the X-Axis is mirrored, we can clearly see that the probability chart is an integral of the percentage chart and vice versa as a derivative graph.
+The gradient from the first chart can be seen as a value in the second one.
