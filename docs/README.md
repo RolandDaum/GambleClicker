@@ -3,9 +3,9 @@
 ![Project Banner](https://github.com/RolandDaum/GambleClick/blob/main/docs/gc_banner.png?raw=true)
 
 ## Introduction
-For every button press the chance of a reset will be increased by one percentage point. Be lucky and get as far as you can. On the bottom of the page there is a chart with the amount of tries visualizing how often how far you came (May take some tries to be properly visualizable).
+For every button press the chance of a reset will be increased by one percentage point. Be lucky and get as far as you can. On the bottom of the page there is a chart with the amount of tries visualizing how often how far you came (may take some tries to be properly visualizable).
 
-I think I got this idea of a TikTok video but not in a direct way. After thinking about it for some time, I just made it. Unfortunately a couple of months later I found basically the same game as a paid version on [steam](https://store.steampowered.com/app/2026850/THE_BUTTON__Golden_Button/).
+I think I got this idea from a TikTok video but not in a direct way. After thinking about it for some time, I just made it. Unfortunately a couple of months later I found basically the same game as a paid version on [steam](https://store.steampowered.com/app/2026850/THE_BUTTON__Golden_Button/).
 
 If you still want to try your luck and see how far it takes you press [here](https://rolanddaum.github.io/GambleClick/) or go to https://rolanddaum.github.io/GambleClick/
 
