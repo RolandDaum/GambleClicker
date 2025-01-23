@@ -20,32 +20,38 @@ document.addEventListener('DOMContentLoaded', () => {
     // buttonElement.addEventListener('click', () => {
     //     buttonTop.classList.add('active'); // Füge die Klasse 'active' hinzu, wenn das Element geklickt wird
     // });
-
-    buttonElement.addEventListener('click', () => {
-        audioClick.currentTime = 0;
-        audioClick.play()
-        let randomeNum = Math.random()*100
-        if (randomeNum < score) {
-            // Neuer Highscore?
-            if (score > localStorage.getItem('heighscore')) {
-                localStorage.setItem('heighscore', score)
-                highscore = score;
-            }
-
-            // increade score in Array and save Array
-            scoreArray[score] = scoreArray[score]++ +1;
-            localStorage.setItem('scoreArray', JSON.stringify(scoreArray))
-
-            score = 0;
-            highscoreElement.innerHTML = highscore + '%';
-        } else {
-            score++
+    document.addEventListener('keyup', event => {
+        if (event.code === 'Space') {
+          click();
         }
-        drawBars()
-        percbarElement.style.background = `linear-gradient(90deg, var(--blassgreen) 0%, var(--blassgreen) ${100-score}%, var(--blassred) ${100-score+0.2}%, var(--blassred) 100%)`
-        scoreElement.innerHTML = score + '%';
-    })
+      })
+    buttonElement.addEventListener('click', click)
 })
+
+function click() {
+    audioClick.currentTime = 0;
+    audioClick.play()
+    let randomeNum = Math.random()*100
+    if (randomeNum < score) {
+        // Neuer Highscore?
+        if (score > localStorage.getItem('heighscore')) {
+            localStorage.setItem('heighscore', score)
+            highscore = score;
+        }
+
+        // increade score in Array and save Array
+        scoreArray[score] = scoreArray[score]++ +1;
+        localStorage.setItem('scoreArray', JSON.stringify(scoreArray))
+
+        score = 0;
+        highscoreElement.innerHTML = highscore + '%';
+    } else {
+        score++
+    }
+    drawBars()
+    percbarElement.style.background = `linear-gradient(90deg, var(--blassgreen) 0%, var(--blassgreen) ${100-score}%, var(--blassred) ${100-score+0.2}%, var(--blassred) 100%)`
+    scoreElement.innerHTML = score + '%';
+}
 
 function loadLocalStorage() {
     highscore = localStorage.getItem('heighscore')
