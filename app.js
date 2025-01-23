@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //     buttonTop.classList.add('active'); // Füge die Klasse 'active' hinzu, wenn das Element geklickt wird
     // });
     document.addEventListener('keyup', event => {
-        if (event.code === 'Space') {
+        // if (event.code === 'Space') {
           click();
-        }
+        // }
       })
     buttonElement.addEventListener('click', click)
 })
